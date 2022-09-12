@@ -4,7 +4,7 @@ process.stdout.write("Please enter a number: ");
 process.stdin.on( "data", function( inputFromUser ){
     // The statements below will be executed automatically after
     // the user has typed in something.
-    let enteredNumber = Number(inputFromUser);
+    let enteredNumber = inputFromUser;
     // Check if number is 0
     switch ( enteredNumber ) {
         case 0:
