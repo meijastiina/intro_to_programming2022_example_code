@@ -32,3 +32,9 @@ for ( let i = 0; i < jumps.length; i++) {
         process.stdout.write("\t" + jumps[i][j]);
     }
 }
+
+// Let's loop with forEach
+process.stdout.write("\n--- Let's loop with forEach ----");
+jumps.forEach(jump => {
+    process.stdout.write("\n" + jump[0]);
+});
