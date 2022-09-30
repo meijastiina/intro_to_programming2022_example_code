@@ -36,3 +36,5 @@ function sum2(number1, number2) {
 let result = sum2(10, 10);
 process.stdout.write("\nSum is " + result);
 process.stdout.write("\nSum is " + sum2(100, 5));
+let average = sum2(10, 55, 456, 10) / 4;
+process.stdout.write("\nAverage is " + average);

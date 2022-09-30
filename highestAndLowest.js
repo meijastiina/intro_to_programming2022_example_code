@@ -16,18 +16,11 @@ function highestAndLowest(numbers) {
     process.stdout.write(highest + " is the highest and " + lowest + " is the lowest");
 }
 function highestAndLowest2(numbers) {
-    // Let's first assume the first item is the highest and later compare to this
-    let highest = Math.max(...numbers);
-    let lowest = Math.min(...numbers);
-
-    process.stdout.write(highest + " is the highest and " + lowest + " is the lowest");
-}
-function compareNumbers(a, b) {
-    return a - b;
+    process.stdout.write(Math.max(...numbers) + " is the highest and " + Math.min(...numbers) + " is the lowest");
 }
 function highestAndLowest3(numbers) {
     // Let's first sort the array
-    numbers.sort(compareNumbers);
+    numbers.sort((a, b) => a - b);
     let highest = numbers[numbers.length-1];
     let lowest = numbers[0];
 
