@@ -1,30 +1,30 @@
 /* Car Class */
 class Car {
     // Class attributes
-    model;
-    plateNr;
-    maxSpeed;
-    currentSpeed;
-    fuelCapacity;
-    remainingFuel;
+    #model;
+    #plateNr;
+    #maxSpeed;
+    #currentSpeed;
+    #fuelCapacity;
+    #remainingFuel;
 
     // Class methods
 
     // Constructor method ( run when an object is created )
     constructor( plateNumber ) {
-        this.plateNr = plateNumber;
+        this.#plateNr = plateNumber;
     }
     // Sets current speed to target speed
     setCurrentSpeed( targetSpeed ) {
-        this.currentSpeed = targetSpeed;
+        this.#currentSpeed = targetSpeed;
     }
     // Returns value of current speed
     checkCurrentSpeed() {
-        return this.currentSpeed;
+        return this.#currentSpeed;
     }
     // Returns platenumber
     getPlateNumber() {
-        return this.plateNr;
+        return this.#plateNr;
     }
 }
 
