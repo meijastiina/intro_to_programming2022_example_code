@@ -1,9 +1,12 @@
+const MAX_SPEED = 200;
 // Create a car object with plate number OOP-001.
 let car = { 
     plateNumber: "OOP-001", 
     currentSpeed: 0,
     setCurrentSpeed( targetSpeed ) { // sets the current speed to the value given
-        this.currentSpeed = targetSpeed;
+        if ( targetSpeed < MAX_SPEED ) {
+            this.currentSpeed = targetSpeed;
+        }
     },
     checkCurrentSpeed() { // returns the current speed
         return this.currentSpeed;
